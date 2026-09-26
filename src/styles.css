@@ -175,3 +175,5 @@
 .hero-glow { background: radial-gradient(ellipse 65% 65% at 50% 20%, color-mix(in oklab, var(--electric) 24%, transparent), transparent 75%); }
 .hero-grid { background-image: linear-gradient(color-mix(in oklab, var(--hero-foreground) 5%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in oklab, var(--hero-foreground) 5%, transparent) 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(to bottom, black, transparent 85%); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .animate-rise, .animate-rise-delay, .float-soft, .flow-pulse { animation: none; } }
+
+@media (prefers-reduced-motion: no-preference) { main > section:not(:first-child).section-visible > div { animation: rise-in .65s both; } }
